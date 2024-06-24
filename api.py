@@ -18,22 +18,20 @@ temp_files = []
 class VideoURL(BaseModel):
     url: str
 
-def summarize_audio(audio_file_path, description_file_path):
+def summarize_audio(audio_file_path):
     model = genai.GenerativeModel("models/gemini-1.5-pro-latest")
     audio_file = genai.upload_file(path=audio_file_path)
     
-    with open(description_file_path, 'r') as file:
-        description = file.read()
+    description = "Please provide a summary of the audio content."
     
     response = model.generate_content([description, audio_file])
     return response.text
 
-def make_title(audio_file_path, description_file_path):
+def make_title(audio_file_path):
     model = genai.GenerativeModel("models/gemini-1.5-pro-latest")
     audio_file = genai.upload_file(path=audio_file_path)
     
-    with open(description_file_path, 'r') as file:
-        description = file.read()
+    description = "Please generate a title for this audio content."
     
     response = model.generate_content([description, audio_file])
     return response.text
@@ -79,19 +77,11 @@ def analyze_video(video: VideoURL):
         if not audio_file_path:
             raise HTTPException(status_code=500, detail="Failed to download and convert file.")
         
-        summary_description = "summary_description.txt"
-        title_description = "title_description.txt"
-        
-        description = summarize_audio(audio_file_path, summary_description)
-        title = make_title(audio_file_path, title_description)
+        description = summarize_audio(audio_file_path)
+        title = make_title(audio_file_path)
         
         cleanup_temp_files()
         
         return {"title": title, "description": description}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run("api:app", host="0.0.0.0", port=port, log_level="info")
