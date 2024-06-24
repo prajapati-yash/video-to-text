@@ -1,11 +1,10 @@
+import os
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from pydub import AudioSegment
 import tempfile
-import os
 import google.generativeai as genai
 import requests
-import time
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -68,7 +67,8 @@ def cleanup_temp_files():
             print(f"Deleted temp file: {file_path}")
         except Exception as e:
             print(f"Error deleting temp file {file_path}: {e}")
-@app.get("/home")
+
+@app.get("/")
 def read_root():
     return {"message": "Welcome to the Video Analysis API"}
 
@@ -93,4 +93,6 @@ def analyze_video(video: VideoURL):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    host = os.getenv("HOST", "0.0.0.0")
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host=host, port=port)
