@@ -68,7 +68,10 @@ def cleanup_temp_files():
             print(f"Deleted temp file: {file_path}")
         except Exception as e:
             print(f"Error deleting temp file {file_path}: {e}")
-
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Video Analysis API"}
+    
 @app.post("/analyze")
 def analyze_video(video: VideoURL):
     try:
