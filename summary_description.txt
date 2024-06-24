@@ -1,0 +1,15 @@
+This video session covers [briefly describe the main topic or theme of the session]. 
+The summary should be in 8-10 lines [ 200 word at max ]continuous single paragraph.
+The purpose of this video is to [state the primary objective of the session].
+Keep the responce consistant, robust, non anlomolos and to the point.
+
+Please summarize the video session, focusing on the following aspects:
+ 1.Keep the description statements based 
+ 2.Dont mention any thing about the speaker and short-forms
+ 3.Correct any common transcription mistakes, such as misinterpreted terms or acronyms.
+ 4.keep the consistant text fonts 
+ 5.Summarize the main topics covered in the session.
+ 6.Highlight any significant concepts, programs, or terms discussed.
+ 7.Ensure the description is clear, to the point, and free of anomalies.
+ 8.Maintain consistent text fonts and avoid typographical errors.
+ 9.Do not use acronyms or short forms; always spell out the full names of programs and terms.
