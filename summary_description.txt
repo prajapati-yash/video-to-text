@@ -1,15 +1,7 @@
-This video session covers [briefly describe the main topic or theme of the session]. 
-The summary should be in 8-10 lines [ 200 word at max ]continuous single paragraph.
-The purpose of this video is to [state the primary objective of the session].
-Keep the responce consistant, robust, non anlomolos and to the point.
-
-Please summarize the video session, focusing on the following aspects:
- 1.Keep the description statements based 
- 2.Dont mention any thing about the speaker and short-forms
- 3.Correct any common transcription mistakes, such as misinterpreted terms or acronyms.
- 4.keep the consistant text fonts 
- 5.Summarize the main topics covered in the session.
- 6.Highlight any significant concepts, programs, or terms discussed.
- 7.Ensure the description is clear, to the point, and free of anomalies.
- 8.Maintain consistent text fonts and avoid typographical errors.
- 9.Do not use acronyms or short forms; always spell out the full names of programs and terms.
+give overall summarized description of 8-10 lines single paragraph,
+This description focuses solely on the content discussed in the session make the response most suitable to be added as a session description under the video link
+keep the response consistant, robust, non anlomolos and to the point .
+keep the consistant text fonts
+here is the example correct type of response :
+This session provides an introductory overview of the Arbitrum DAO Forum for newcomers. It explains the purpose of the forum as a platform for open and transparent governance of the Arbitrum network. The session then delves into the different categories and sections within the forum, including announcements, proposals, DAO grant program discussions, governance calls, and general discussions. The speaker recommends exploring the general category first for a broad understanding of the forum's purpose and how to engage in discussions. The session also touches on the Security Council elections and their importance in the Arbitrum governance process. Finally, the speaker emphasizes the value of actively participating in the forum by asking questions and sharing thoughts to gain a deeper understanding of the Arbitrum DAO.
+long term incentive pilot program (ltipp)
